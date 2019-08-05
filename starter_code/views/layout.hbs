@@ -14,9 +14,13 @@
 {{!-- navbar consistant across all pages --}}
     <div class="nav-container">
 
-        <div id="nav-home">Home</div>
-        <div>Beers</div>
-        <div>Random Beers</div>
+
+{{!-- href here is same as saying app.get? --}}
+        <div id="nav-home"> <a href="/"> Home </a> </div>
+        
+        <div> <a href="beers"> Beers </a> </div>
+
+        <div> <a href="randombeers"> Random Beers </a> </div>
 
     </div>
 
@@ -25,7 +29,7 @@
     {{{ body }}}
 
 <footer>
-    <p>Developed by Ironhack </p>
+    <p>Developed by Alexander Hoinville </p>
 </footer>
 
 </body>

@@ -1,8 +1,8 @@
 
 const express = require('express');
-const hbs     = require('hbs');
-const app     = express();
-const path    = require('path');
+const hbs = require('hbs');
+const app = express();
+const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 const punkAPI = new PunkAPIWrapper();
 
@@ -23,6 +23,14 @@ app.get('/', (req, res, next) => {
 
 app.get('/Home', (req, res, next) => {
   res.render('home');
+});
+
+app.get('/beers', (req, res, next) => {
+  res.render('beers');
+});
+
+app.get('/randombeers', (req, res, next) => {
+  res.render('randombeers');
 });
 
 
