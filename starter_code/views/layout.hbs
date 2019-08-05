@@ -1,0 +1,33 @@
+<!-- layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A Page</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+
+{{!-- navbar consistant across all pages --}}
+    <div class="nav-container">
+
+        <div id="nav-home">Home</div>
+        <div>Beers</div>
+        <div>Random Beers</div>
+
+    </div>
+
+
+    {{!-- this is where unique code from other html will fit --}}
+    {{{ body }}}
+
+<footer>
+    <p>Developed by Ironhack </p>
+</footer>
+
+</body>
+
+</html>
